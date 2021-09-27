@@ -1,0 +1,313 @@
+body,
+html {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  min-height: auto;
+  background-color: #2b1331c5;
+  background-image: url("https://www.teahub.io/photos/full/47-475400_25-basketball-wallpapers-backgrounds-images-pictures-basketball-court.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+ul {
+  list-style: none;
+}
+img {
+  max-width: 200px;
+  max-height: 200px;
+}
+header {
+  margin-left: 2%;
+  font-size: 2rem;
+  color: rgba(148, 142, 187, 0.267);
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.562),
+    -1px -1px 2px rgba(255, 255, 255, 0.205);
+}
+input,
+select {
+  margin: 0.5%;
+  background: rgba(255, 255, 255, 0.5);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: space-evenly;
+  margin-top: 1em;
+}
+.cards > * {
+  flex: 0 1 22em;
+  height: 5em;
+  line-height: 5em;
+  text-align: center;
+  color: rgba(16, 46, 83, 0.959);
+  border-radius: 100px;
+  box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.719);
+  animation: ease-in-out;
+  font-size: 1.5em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgba(255, 255, 255, 0.322);
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.568),
+    -1px -1px 2px rgba(255, 255, 255, 0.582);
+}
+
+.cards > *:hover {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.719);
+  transform: scale(1.1);
+  color: rgba(0, 0, 0, 0.719);
+}
+.navbar {
+  background-color: rgba(69, 86, 141, 0.205);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.home-link {
+  margin-top: 1%;
+  margin-right: 7%;
+  text-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.719);
+  animation: ease-in-out;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.home-link:hover {
+  text-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.719);
+  transform: scale(1.1);
+}
+.container {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+}
+.teams-list,
+.players-list,
+.matches-list {
+  background: rgba(184, 184, 184, 0.822);
+  width: 20%;
+  margin-left: 1%;
+  border-radius: 5px;
+  max-height: 85vh;
+  overflow-y: scroll;
+}
+/* .teams-info{
+  background: rgba(184, 184, 184, 0.822);
+  width: 77%;
+  margin-left: 1%;
+  border-radius: 5px;
+} */
+/* .team-names{
+  border-top:1px solid rgba(87, 87, 87, 0.493);
+  border-radius: 5px;
+  min-height: 5vh;
+  line-height: 5vh;
+  text-align: center;
+ } */
+.team-info-container {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+}
+.team-info {
+  margin-left: 2%;
+  border-right: 2px solid rgba(105, 105, 105, 0.664);
+  width: 40%;
+}
+.team-players {
+  margin-left: 2%;
+}
+.team-player {
+  border-bottom: 1px solid rgba(75, 75, 75, 0.548);
+}
+/* .players-list{
+  background: rgba(184, 184, 184, 0.822);
+  width: 20%;
+  margin-left: 1%;
+  border-radius: 5px;
+  max-height:85vh;
+  overflow-y:scroll;
+} */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 1px;
+  background-color: rgba(184, 184, 184, 0.822);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgba(184, 184, 184, 0.822);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgb(145, 145, 145);
+}
+.players-info,
+.teams-info,
+.match-info {
+  background: rgba(184, 184, 184, 0.822);
+  width: 77%;
+  margin-left: 1%;
+  border-radius: 5px;
+}
+.player-names,
+.team-names,
+.matches {
+  border-top: 1px solid rgba(87, 87, 87, 0.493);
+  border-radius: 5px;
+  min-height: 5vh;
+  line-height: 5vh;
+  text-align: center;
+}
+.player-names:hover,
+.team-names:hover,
+.matches:hover {
+  background-color: rgba(105, 105, 105, 0.822);
+}
+.player-info-container {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+}
+.player-info {
+  margin-left: 2%;
+}
+.players-header,
+.teams-header,
+.matches-header {
+  position: sticky;
+  top: 0;
+  background: rgb(184, 184, 184);
+  text-indent: 3%;
+}
+.player-info-h,
+.players-header,
+.teams-h,
+.teams-header,
+.matches-header {
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.568),
+    -1px -1px 2px rgba(255, 255, 255, 0.582);
+  font-size: x-large;
+  margin-left: 0;
+  color: rgba(4, 6, 10, 0.76);
+}
+/* .teams-h,
+.teams-header{
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.568), -1px -1px 2px rgba(255, 255, 255, 0.582);
+  font-size:x-large;
+  margin-left:0%;
+  color:rgba(4, 6, 10, 0.76);
+} */
+.mgmt-h {
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.568),
+    -1px -1px 2px rgba(255, 255, 255, 0.582);
+  font-size: x-large;
+  margin-left: 2%;
+  color: rgba(42, 43, 44, 0.76);
+}
+.add-team,
+.add-player,
+.admin-login,
+.admin-panel {
+  background: rgba(184, 184, 184, 0.822);
+  min-height: 5rem;
+  line-height: 5rem;
+}
+
+.assign-team,
+.delete-player-or-team {
+  background: rgba(184, 184, 184, 0.822);
+  min-height: 5rem;
+  position: relative;
+}
+.player-select,
+.team-select {
+  display: flex;
+}
+
+.add,
+.assign,
+.delete-player,
+.delete-team,
+.admin-btns {
+  background: rgba(221, 221, 221, 0.445);
+  border-radius: 10%;
+}
+.gmanager-container {
+  display: flex;
+  flex-flow: row;
+}
+.tselect {
+  position: absolute;
+  background: rgba(221, 221, 221, 0.822);
+  border-radius: 5px;
+  width: 60%;
+  left: 1%;
+}
+.gdisplay {
+  position: absolute;
+  background: rgba(221, 221, 221, 0.822);
+  border-radius: 5px;
+  width: 25%;
+  right: 1%;
+}
+.teamselection {
+  display: flex;
+  flex-flow: row;
+}
+.register-game {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.material-icons {
+  color: black;
+}
+
+.home-team,
+.away-team {
+  background-color: rgba(184, 184, 184, 0.822);
+  box-shadow: 0px 0px 7px -1px rgba(0, 0, 0, 0.719);
+}
+.teams-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.teams-details > *:nth-child(1) {
+  flex: 1 1 100%;
+  text-align: center;
+}
+.teams-details > *:nth-child(2) {
+  flex: 1 1 40%;
+}
+.teams-details > *:nth-child(3) {
+  flex: 1 1 40%;
+}
